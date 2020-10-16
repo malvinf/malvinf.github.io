@@ -1,4 +1,5 @@
-import { Home, Profile, Contact, Login, ProfileId } from '../pages';
+import { Home, About, Experience, Login, ProfileId } from '../pages';
+import Skills from '../pages/skills';
 
 const routes = [
   {
@@ -7,13 +8,18 @@ const routes = [
     isPublic: false,
   },
   {
-    path: '/profile',
-    component: Profile,
-    isPublic: false,
+    path: '/about',
+    component: About,
+    isPublic: true,
   },
   {
-    path: '/contact',
-    component: Contact,
+    path: '/experience',
+    component: Experience,
+    isPublic: true,
+  },
+  {
+    path: '/skills',
+    component: Skills,
     isPublic: true,
   },
   {
