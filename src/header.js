@@ -13,8 +13,8 @@ const Header = () => {
           <ul>
             {listMenu.map((name) => {
               return (
-                <li>
-                  <Link to={`/${name}`} key={name}>
+                <li key={name}>
+                  <Link to={`/${name}`}>
                     <div className="navbar__menu">{name}</div>
                   </Link>
                 </li>
